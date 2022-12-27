@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="english">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="css/mater.css" />
+		<link rel="icon" href="favicon.png" type="image/png" />
+		<title>Amaan-Software Engineer</title>
+		<script>
+            var threshold = 0.7;
+			window.onresize = function () {
+                var height = screen.availHeight
+				var width = screen.availWidth
+				if ((height*threshold) > width) {
+					document.getElementsByClassName("rotation")[0].style.display = "block";
+				}
+                else{
+					document.getElementsByClassName("rotation")[0].style.display = "None";
+                }
+			};
+            window.onload = function () {
+                var height = screen.availHeight
+				var width = screen.availWidth
+				if ((height*threshold) > width) {
+					document.getElementsByClassName("rotation")[0].style.display = "block";
+				}
+                else{
+					document.getElementsByClassName("rotation")[0].style.display = "None";
+                }
+			};
+		</script>
+	</head>
+	<body>
+        <div class="rotation"><img src="images/rotate.gif" alt="Rotate Image" width="15%"></div>
+		<div class="top-page">
+			<nav class="navbar">
+				<a href="about.html"><h4>About</h4></a>
+				<br />
+				<a href="about.html"><h4>Contact</h4></a>
+			</nav>
+			<img
+				class="top-right cloud"
+				src="images/three_cloud.png"
+				alt="Cloud Image"
+				width="15%"
+			/>
+			<img
+				class="top-left cloud"
+				src="images/one_cloud.png"
+				alt="Cloud Image"
+				width="10%"
+			/>
+			<img
+				class="bottom-left cloud"
+				src="images/one_cloud.png"
+				alt="Cloud Image"
+				width="10%"
+			/>
+
+			<div class="banner">
+				<h1>
+					I'm Amaan Shaikh<br />
+					A <span class="pro">Pro</span>grammer.
+				</h1>
+			</div>
+		</div>
+		<footer>
+			<img
+				class="hills"
+				src="images/multi-hill.png"
+				alt="Hill Image"
+				width="70%"
+			/>
+			<img
+				class="ground"
+				src="images/ground.png"
+				alt="Ground Image"
+				width="100%"
+			/>
+		</footer>
+	</body>
+</html>

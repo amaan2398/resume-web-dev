@@ -1,0 +1,109 @@
+
+/* htm/ */
+
+body{
+    margin: 0;
+    text-align: center;
+    background-color: #6ecbf3;
+}
+.top-page{
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+.banner{
+    display: block;
+    font-family: sans;
+    background-color: #8E3200;
+    color: #FFEBC1;
+    border: outset;
+    margin-left:32%;
+    margin-right: 32%;
+    border-radius: 10px;
+}
+
+h1{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.pro{
+    text-decoration: underline;
+}
+
+.cloud{
+    position: absolute;
+    animation: cloud-move 1s infinite;
+}
+
+.top-right{
+    top:10%;
+    right: 200px;
+}
+.top-left{
+    top: 12%;
+    left: 10%;
+}
+.bottom-left{
+    top: 40%;
+    left: 22%;
+}
+
+@keyframes cloud-move{
+    from, to { transform: translateY(-5px); }
+    50% { transform: translateY(5px); }
+}
+
+.hills{
+    margin-top: 1%;
+    margin-bottom: 0;
+    position: relative;
+    top:7px;
+}
+
+.ground{
+    position: relative;
+    top:3px;
+}
+
+.navbar{
+    position: absolute;
+    right: 10px;
+}
+
+.navbar a{
+    animation: flicker 1s infinite;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: gold;
+    color: #FAF8F1;
+    text-decoration: dotted;
+    text-shadow: 1px 1px #8E3200;
+    margin: 3%;
+    border: outset;
+    border-color:#FAF8F1 #E5BA73 #E5BA73 #FAF8F1;
+    border-radius: 10px;
+}
+
+@keyframes flicker {
+    0%{
+        background-color: gold;
+    }
+    50%{
+        background-color: orange;
+    }
+    100%{
+        background-color: gold;
+    }
+}
+.navbar a:hover{
+    border: inset;
+    border-color:#E5BA73 #FAF8F1 #FAF8F1 #E5BA73;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
