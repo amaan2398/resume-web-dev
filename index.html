@@ -7,12 +7,10 @@
 		<title>Amaan-Software Engineer</title>
 		<script>
 			var threshold = 0.7;
-			var screen_r = 2.3;
+			var screen_r = 1.6;
 			window.onresize = function () {
 				var height = screen.availHeight;
 				var width = screen.availWidth;
-                document.getElementsByClassName("rotationp")[0].innerHTML =
-						" " + height + " X " + width + " = "+ (height/width).toFixed(2);
 				if (height * threshold > width) {
 					document.getElementsByClassName(
 						"rotation"
@@ -23,7 +21,7 @@
 						"rotation"
 					)[0].style.display = "None";
 				}
-				if (screen_r >= width / height) {
+				if (screen_r >= (width / height)) {
 					document.getElementsByTagName("FOOTER")[0].style.position =
 						"absolute";
 				} else {
@@ -34,8 +32,6 @@
 			window.onload = function () {
 				var height = screen.availHeight;
 				var width = screen.availWidth;
-                document.getElementsByClassName("rotationp")[0].innerHTML =
-						" " + height + " X " + width + " = "+ (height/width).toFixed(2);
 				if (height * threshold > width) {
 					document.getElementsByClassName(
 						"rotation"
@@ -46,7 +42,7 @@
 						"rotation"
 					)[0].style.display = "None";
 				}
-				if (screen_r >= width / height) {
+				if (screen_r >= (width / height)) {
 					document.getElementsByTagName("FOOTER")[0].style.position =
 						"absolute";
 				} else {
