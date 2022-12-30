@@ -4,6 +4,12 @@
 		<meta charset="UTF-8" />
 		<link rel="stylesheet" href="css/mater.css" />
 		<link rel="icon" href="favicon.png" type="image/png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+			rel="stylesheet"
+		/>
 		<title>Amaan-Software Engineer</title>
 		<script>
 			var threshold = 0.7;
@@ -15,13 +21,12 @@
 					document.getElementsByClassName(
 						"rotation"
 					)[0].style.display = "block";
-					
 				} else {
 					document.getElementsByClassName(
 						"rotation"
 					)[0].style.display = "None";
 				}
-				if (screen_r >= (width / height)) {
+				if (screen_r >= width / height) {
 					document.getElementsByTagName("FOOTER")[0].style.position =
 						"absolute";
 				} else {
@@ -36,13 +41,12 @@
 					document.getElementsByClassName(
 						"rotation"
 					)[0].style.display = "block";
-					
 				} else {
 					document.getElementsByClassName(
 						"rotation"
 					)[0].style.display = "None";
 				}
-				if (screen_r >= (width / height)) {
+				if (screen_r >= width / height) {
 					document.getElementsByTagName("FOOTER")[0].style.position =
 						"absolute";
 				} else {
@@ -53,16 +57,32 @@
 		</script>
 	</head>
 	<body>
-        <h1 class="rotationp"></h1>
+		<h1 class="rotationp"></h1>
 		<div class="rotation">
 			<img src="images/rotate.gif" alt="Rotate Image" width="15%" />
 		</div>
-		
 		<div class="top-page">
 			<nav class="navbar">
-				<a href="about.html"><h4>About</h4></a>
+				<a href="homepage.html">
+					<div class="tooltip">
+						<h1>?</h1>
+						<span class="tooltiptext">Home Page</span>
+					</div>
+				</a>
 				<br />
-				<a href="about.html"><h4>Contact</h4></a>
+				<a href="homepage.html">
+					<div class="tooltip">
+						<h1>?</h1>
+						<span class="tooltiptext">About</span>
+					</div>
+				</a>
+				<br />
+				<a href="homepage.html">
+					<div class="tooltip">
+						<h1>?</h1>
+						<span class="tooltiptext">Contact</span>
+					</div>
+				</a>
 			</nav>
 			<img
 				class="top-right cloud"
@@ -84,10 +104,8 @@
 			/>
 
 			<div class="banner">
-				<h1>
-					I'm Amaan Shaikh<br />
-					A <span class="pro">Pro</span>grammer.
-				</h1>
+				<h1>I'm Amaan Shaikh.</h1>
+				<h2>A <span class="pro">Pro</span>grammer.</h2>
 			</div>
 		</div>
 		<footer>
@@ -104,6 +122,5 @@
 				width="100%"
 			/>
 		</footer>
-        
 	</body>
 </html>

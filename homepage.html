@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="english">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Amaan-Software Engineer</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="css/homepage_style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+			rel="stylesheet"
+		/>
+		<script>
+			var flag = false;
+			window.setInterval(function () {
+				if (flag === true) {
+					var d = document.getElementsByClassName("circle");
+					for (let i = 0; i < d.length; i++) {
+						d[i].style.top =
+							Math.floor(Math.random() * screen.availHeight) +
+							2 +
+							"px";
+						d[i].style.left =
+							Math.floor(Math.random() * screen.availWidth) +
+							"px";
+						var s = Math.floor(Math.random() * 1) + 0.2 + "rem";
+						d[i].style.width = s;
+						d[i].style.height = s;
+						s = Math.random() * 0.15 + 0.01 + "rem";
+						d[i].style.borderWidth = s;
+					}
+          console.log(screen.availHeight)
+				}
+				flag = true;
+			}, 3000);
+		</script>
+	</head>
+	<body>
+		<div class="particle-container">
+			<div class="particles">
+				<span class="circle a1"></span>
+				<span class="circle a2"></span>
+				<span class="circle a3"></span>
+				<span class="circle a4"></span>
+				<span class="circle a5"></span>
+				<span class="circle a6"></span>
+				<span class="circle a7"></span>
+				<span class="circle a8"></span>
+				<span class="circle a9"></span>
+				<span class="circle a10"></span>
+				<span class="circle a11"></span>
+				<span class="circle a12"></span>
+				<span class="circle a13"></span>
+				<span class="circle a14"></span>
+				<span class="circle a15"></span>
+				<span class="circle a16"></span>
+				<span class="circle a17"></span>
+				<span class="circle a18"></span>
+				<span class="circle a19"></span>
+				<span class="circle a20"></span>
+				<span class="circle a21"></span>
+				<span class="circle a22"></span>
+				<span class="circle a23"></span>
+				<span class="circle a24"></span>
+				<span class="circle a25"></span>
+				<span class="circle a26"></span>
+				<span class="circle a27"></span>
+				<span class="circle a28"></span>
+				<span class="circle a29"></span>
+				<span class="circle a30"></span>
+			</div>
+		</div>
+		<div class="middle-container">
+			<img
+				class="water-frame1"
+				src="images/Water1.png"
+				alt="water-wave-img"
+				width="100%"
+			/>
+			<img
+				class="water-frame2"
+				src="images/Water2.png"
+				alt="water-wave-img"
+				width="100%"
+			/>
+			<img
+				class="animal1"
+				src="images/Water-Animal.png"
+				alt="water-animal-img"
+				width="3%"
+			/>
+			<div class="profile glass">
+				<img
+					class="profile-pic"
+					src="images/amaan.png"
+					alt="amaan-profile-img"
+				/>
+				<h1>Hi.</h1>
+				<p class="intro">
+					I am an Software Desiger/Developer based in Maharashtra,
+					India. I have a passion for software design. <br />
+					I ❤️ Photography and Playing FPS Games.
+				</p>
+			</div>
+			<hr />
+			<div class="skills glass">
+				<h2>What I can do.</h2>
+				<div class="skill-row glass">
+					<img
+						class="develop-img"
+						src="images/develop.png"
+						alt="develop-img"
+						width="20%"
+					/>
+
+					<h3 class="skill-develop-text">Develop what you need.</h3>
+					<p class="skill-develop-text">
+						I'm a developer, so I know how to build your software
+						using the latest technologies available.
+					</p>
+				</div>
+				<div class="skill-row glass">
+					<img
+						class="system-design-img"
+						src="images/system-design.png"
+						alt="system-design-img"
+						width="20%"
+					/>
+					<img
+						class="animal2"
+						src="images/Water-Animal.png"
+						alt="water-animal-img"
+						width="3%"
+					/>
+					<h3 class="skill-design-text">
+						System Design what you want.
+					</h3>
+					<p class="skill-design-text">
+						I like to keep it simple. To meet your needs, I aim to
+						design an architecture that is scalable and efficient.
+					</p>
+				</div>
+			</div>
+			<hr />
+			<img
+				class="animal3"
+				src="images/Water-Animal.png"
+				alt="water-animal-img"
+				width="3%"
+			/>
+			<div class="contact-me glass">
+				<h2>I can help.</h2>
+				<h3>I’m currently available for freelance work.</h3>
+				<p class="contact-message">
+					If you have a project that you want to get started, think
+					you need my help with something or just fancy saying hey,
+					then get in touch.
+				</p>
+				<div class="btn">
+					<a
+						href="mailto:amaan.nassar123@gmail.com"
+						style="
+							text-decoration: none;
+							color: inherit;
+							font-family: inherit;
+						"
+					>
+						MESSAGE ME
+					</a>
+				</div>
+			</div>
+		</div>
+		<img
+			class="animal4"
+			src="images/Water-Animal.png"
+			alt="water-animal-img"
+			width="3%"
+		/>
+
+		<div class="bottom-container">
+			<a
+				class="footer-link"
+				href="https://www.linkedin.com/in/amaan-shaikh2398"
+			>
+				LinkedIn <img width="2%" src="https://img.icons8.com/fluency-systems-filled/48/null/external-link.png"/>
+			</a>
+			<a class="footer-link" href="https://leetcode.com/amaan2398/">
+				LeetCode <img width="2%" src="https://img.icons8.com/fluency-systems-filled/48/null/external-link.png"/>
+			</a>
+			<a class="footer-link" href="mailto:amaan.nassar123@gmail.com">
+				Hire Me <img width="2%" src="https://img.icons8.com/fluency-systems-filled/48/null/external-link.png"/>
+			</a>
+			<p class="copyright">© 2022 Amaan Shaikh.</p>
+		</div>
+		<img
+			class="water-ground"
+			src="images/water-ground2.png"
+			alt="water-ground-img"
+			width="100%"
+		/>
+	</body>
+</html>
